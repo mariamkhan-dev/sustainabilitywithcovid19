@@ -1,0 +1,39 @@
+img{
+  border-radius: 50%;
+}
+.middle-container{
+  background-color:#a6f0c6;
+}
+
+.bottom-container{
+  background-color: #4e3d53;
+  text-align: center;
+  color: aliceblue;
+}
+
+p{
+  color: #a98b98;
+  text-align: center;
+  width:300px;
+  font-size:1.5rem;
+  margin:25px auto;
+  line-height: 2;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 80px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
