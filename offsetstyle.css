@@ -1,0 +1,43 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: andale mono;
+}
+
+body{
+  background-color: #D5F5E3;
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+    align-items: center;
+  height: 500px;
+  width: 500px;
+  background: #F9FEFF;
+  padding: 10px;
+  border-radius: 25px;
+  position: relative;
+  text-align: center;
+}
+
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}

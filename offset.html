@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Offsetting Your Covid-19 Carbon Footprint</title>
+    <link rel="stylesheet" href="offsetstyle.css">
+</head>
+
+<body>
+<head>
+  Offsetting Your Covid-19 Carbon Footprint
+</head>
+
+  <div class="container">
+
+    <div class="box">
+      <div class="box">
+        <div class="form">
+        <form>
+            <BR>
+              <p>Which Covid-19 waste product would you like to see your cabon footprinnt of? : <br>
+                </p>
+            <input type="radio" id="facemasks" name="waste" value="0.06">
+            <label for="masks">Face Masks</label><br>
+            <input type="radio" id="n95masks" name="waste" value="0.05">
+            <label for="masks">N95 Masks</label><br>
+            <input type="radio" id="gloves" name="waste" value=".8">
+            <label for="gloves">Gloves</label><br>
+            <input type="radio" id="wipes" name="waste" value="1">
+            <label for="wipes">Wipes</label>
+          </form>
+
+          <script type="text/javascript">
+            function multiplyBy()
+        {
+                num1 = document.getElementById("firstNumber").value;
+                if (document.getElementById("facemasks").checked = true){
+                num2 = document.getElementById("facemasks").value;
+                }
+                if (document.getElementById("n95masks").checked = true){
+                num2 = document.getElementById("n95masks").value;
+                }
+                else if (document.getElementById("gloves").checked = true){
+                num2 = document.getElementById("gloves").value;
+                }
+                else {
+                num2 = document.getElementById("wipes").value;
+                }
+
+                document.getElementById("result").innerHTML = num1 * num2;
+        }
+          </script>
+          <form>
+        How much of this item did you use? : <input type="text" id="firstNumber" /><br>
+        <input type="button" onClick="multiplyBy()" Value="Calculate" />
+        </form>
+        <p>Your Covid-19 Carbon Footprint is : <br>
+          <span id = "result"></span> kg
+        </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
