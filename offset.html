@@ -7,72 +7,91 @@
 </head>
 
 <body>
-<head>
-  Offsetting Your Covid-19 Carbon Footprint
-</head>
 
   <div class="container">
-
     <div class="box">
       <div class="box">
         <div class="form">
+          <h2>
+            Offsetting Your Covid-19 Carbon Footprint
+          </h2>
+          <p>
+          <br>
+            Which Covid-19 waste product would you like to see your cabon footprint of?
+          <br>
+          <br>
+          </p>
         <form>
-            <BR>
-              <p><b>Which Covid-19 waste product would you like to see your cabon footprint of? : </b><br>
-                </p>
             <input type="radio" id="facemasks" name="waste" value="0.06">
             <label for="masks">Face Masks</label><br>
             <input type="radio" id="n95masks" name="waste" value="0.05">
             <label for="masks">N95 Masks</label><br>
-            <input type="radio" id="gloves" name="waste" value=".8">
-            <label for="gloves">Gloves</label><br>
-            <input type="radio" id="wipes" name="waste" value="1">
-            <label for="wipes">Wipes</label>
+            <input type="radio" id="gloves" name="waste" value="0.42">
+            <label for="gloves">Pair of Latex Gloves</label><br>
+            <input type="radio" id="plasticutensils" name="waste" value="1.14">
+            <label for="wipes">Plastic Utensils</label>
           </form>
+          <br>
+          <br>
 
           <script type="text/javascript">
             function multiplyBy()
-        {
-                num1 = document.getElementById("firstNumber").value;
+            {
+              num1 = document.getElementById("firstNumber").value;
 
-                if (document.getElementById("facemasks").checked == true){
-                num2 = document.getElementById("facemasks").value;
-                }
-                else if (document.getElementById("n95masks").checked == true){
-                num2 = document.getElementById("n95masks").value;
-                }
-                else if (document.getElementById("gloves").checked == true){
-                num2 = document.getElementById("gloves").value;
-                }
-                else if (document.getElementById("wipes").checked == true){
-                num2 = document.getElementById("wipes").value;
-                }
+              if (document.getElementById("facemasks").checked == true){
+              num2 = document.getElementById("facemasks").value;
+              }
+              else if (document.getElementById("n95masks").checked == true){
+              num2 = document.getElementById("n95masks").value;
+              }
+              else if (document.getElementById("gloves").checked == true){
+              num2 = document.getElementById("gloves").value;
+              }
+              else if (document.getElementById("plasticutensils").checked == true){
+              num2 = document.getElementById("plasticutensils").value;
+              }
 
-                document.getElementById("result").innerHTML = num1 * num2;
-        }
+              document.getElementById("result").innerHTML = num1 * num2;
+            }
           </script>
+
           <form>
-        How much of this item did you use? : <input type="text" id="firstNumber" /><br>
-        <input type="button" onClick="multiplyBy()" Value="Calculate" />
+            <center>
+              How much of this item did you use?
+            </center>
+            <br>
+              <center>
+                <input type="text" id="firstNumber" />
+                <br>
+                <br>
+                <input type="button" onClick="multiplyBy()" Value="Calculate" />
         </form>
-        <p>Your Covid-19 Carbon Footprint is : <br>
+
+        <p>
+          <br>
+          Your Covid-19 Carbon Footprint is:
+          <br>
+          <br>
           <span id = "result"></span> kg
         </p>
+        <br>
 
-		<BR>
-		<p><b> How to Reduce Your Waste</b></p>
-		<form method = "post" action="/Tests/Post">
-		<input type = "radio" name="item_reduce" value="facemasks"><label for="facemasks">facemasks</label><br>
-		<input type = "radio" name="item_reduce" value="n95masks"><label for="n95masks">n95masks</label><br>
-		<input type = "radio" name="item_reduce" value="facemasks"><label for="gloves">gloves</label><br>
-		<input type = "radio" name="item_reduce" value="plastic utensils"><label for="plastic utensils">plastic utensils</label><br>
-		<input type="submit" value="Sumbit">
-		</form>
+        <p><b> How to Reduce Your Waste</b></p>
+          <br>
+          <form method = "post" action="/Tests/Post">
+            <input type = "radio" name="item_reduce" value="facemasks"><label for="facemasks">Face Masks</label><br>
+            <input type = "radio" name="item_reduce" value="n95masks"><label for="n95masks">N95 Masks</label><br>
+            <input type = "radio" name="item_reduce" value="facemasks"><label for="gloves">Pair of Latex Gloves</label><br>
+            <input type = "radio" name="item_reduce" value="plastic utensils"><label for="plastic utensils">Plastic Utensils</label><br>
+            <br>
+            <center><input type="submit" value="Sumbit"></center>
+          </form>
+
         </div>
       </div>
     </div>
   </div>
-
 
 </body>
 </html>
