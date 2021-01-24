@@ -34,16 +34,17 @@
             function multiplyBy()
         {
                 num1 = document.getElementById("firstNumber").value;
-                if (document.getElementById("facemasks").checked = true){
+
+                if (document.getElementById("facemasks").checked == true){
                 num2 = document.getElementById("facemasks").value;
                 }
-                if (document.getElementById("n95masks").checked = true){
+                else if (document.getElementById("n95masks").checked == true){
                 num2 = document.getElementById("n95masks").value;
                 }
-                if (document.getElementById("gloves").checked = true){
+                else if (document.getElementById("gloves").checked == true){
                 num2 = document.getElementById("gloves").value;
                 }
-                else {
+                else if (document.getElementById("wipes").checked == true){
                 num2 = document.getElementById("wipes").value;
                 }
 
